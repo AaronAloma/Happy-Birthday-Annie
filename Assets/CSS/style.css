@@ -19,6 +19,9 @@ ul {
 body {
     background-image: linear-gradient(var(--primary-color), var(--black));
     background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    height: auto;
 }
 
 :root {
@@ -156,16 +159,16 @@ h1 {
 }
 
 @media screen and (max-width: 768px) {
+    body {
+        height: 3000px;
+    }
+
     body.no-scroll {
         overflow: hidden;
     }
 
     .hidden {
         display: block;
-    }
-
-    main {
-        height: 200vh;
     }
 
     .row {
